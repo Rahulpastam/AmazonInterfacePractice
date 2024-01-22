@@ -30,7 +30,8 @@ products.forEach((productObj)=>{
     productsHTML += `
     <div class="product-container">
           <div class="product-image-container">
-            <img class="${productObj.image}">
+          <img class="product-image"
+          src="${productObj.image}">
           </div>
 
           <div class="product-name limit-text-to-2-lines">
@@ -77,5 +78,4 @@ products.forEach((productObj)=>{
         </div>
     `;
 });
-
 document.querySelector('.products-grid').innerHTML = productsHTML;
